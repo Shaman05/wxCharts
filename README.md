@@ -8,7 +8,14 @@
 * js设置的canvas大小实际上是以px为单位的，100%宽度的可设置'auto'，如页面中要指定canvas大小，则在js里需按规则先计算绘图的canvas大小。具体规则可以参考官方文档：[WXSS尺寸单位](https://mp.weixin.qq.com/debug/wxadoc/dev/framework/view/wxss.html?t=2017112)
 * 正在施工中：在图上手势移动显示坐标线和数据明细。
 
+
+## 文档
+
+配置文档参考：[wiki](https://github.com/Shaman05/wxCharts/wiki)
+
+
 ## 效果展示
+
 ![image](https://github.com/Shaman05/wxCharts/blob/master/images/tsd.png)
 ![image](https://github.com/Shaman05/wxCharts/blob/master/images/tsdd.gif)
 ![image](https://github.com/Shaman05/wxCharts/blob/master/images/ts5.png)
