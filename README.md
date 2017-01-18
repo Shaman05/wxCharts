@@ -1,5 +1,5 @@
-# wxCharts-demo
-微信小程序中的股票分时图、K线图DEMO
+# wxCharts
+微信小程序中的股票分时图、K线图
 
 ## 说明
 
@@ -9,8 +9,8 @@
 * 正在施工中：在图上手势移动显示坐标线和数据明细。
 
 ## 效果展示
-![image](https://github.com/Shaman05/wxCharts-demo/blob/master/images/tsd.png)
-![image](https://github.com/Shaman05/wxCharts-demo/blob/master/images/tsdd.gif)
-![image](https://github.com/Shaman05/wxCharts-demo/blob/master/images/ts5.png)
-![image](https://github.com/Shaman05/wxCharts-demo/blob/master/images/dkl.png)
-![image](https://github.com/Shaman05/wxCharts-demo/blob/master/images/minkl.png)
+![image](https://github.com/Shaman05/wxCharts/blob/master/images/tsd.png)
+![image](https://github.com/Shaman05/wxCharts/blob/master/images/tsdd.gif)
+![image](https://github.com/Shaman05/wxCharts/blob/master/images/ts5.png)
+![image](https://github.com/Shaman05/wxCharts/blob/master/images/dkl.png)
+![image](https://github.com/Shaman05/wxCharts/blob/master/images/minkl.png)
