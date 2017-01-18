@@ -1,0 +1,6 @@
+<view class="container">
+    <view class="btn-area">
+        <navigator url="../ts/ts" hover-class="navigator-hover" open-type="switchTab">查看 分时图demo</navigator>
+        <navigator url="../kl/kl" hover-class="navigator-hover" open-type="switchTab">查看 K线图demo</navigator>
+    </view>
+</view>

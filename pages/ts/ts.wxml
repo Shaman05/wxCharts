@@ -1,0 +1,46 @@
+<view class="container">
+    <view class="tab">
+        <text class="{{tabName == 'ts' ? 'current': ''}}" data-type="ts" bindtap="tabChart">分时</text>
+        <text class="{{tabName == 'ts5' ? 'current': ''}}" data-type="ts5" bindtap="tabChart">五日</text>
+    </view>
+    <view class="content tab-content" wx:if="{{tabName == 'ts'}}">
+        <view class="stock">
+            <text>股票：{{stock}} - {{code}}</text>
+            <text>时间：{{time}}</text>
+            <text>昨收：{{yc}}</text>
+        </view>
+        <canvas canvas-id="time-sharing" class="stage" style="width: 100%; height: 200px">
+        </canvas>
+        <canvas canvas-id="time-sharing-b" class="stage" style="width: 100%; height: 80px">
+        </canvas>
+        <view class="btn-area">
+            <text class="btn" hover-class="btn-hover" bindtap="reset">重置</text>
+            <text class="btn" hover-class="btn-hover" bindtap="dynamic">模拟动态变化</text>
+            <picker class="btn" mode="selector" value="{{timerIndex}}" range="{{timerArray}}" bindchange="bindTimeChange">
+                <view class="picker">
+                    动态变更频率: {{timerArray[timerIndex]}}
+                </view>
+            </picker>
+            <text class="p text">data index: {{dataIndex}}</text>
+            <text class="p text">ts1 render time: {{ts1RenderTime}}ms</text>
+            <text class="p text">ts2 render time: {{ts2RenderTime}}ms</text>
+            <text class="p text">本demo的模拟数据前16条是未开盘的数据，实际情况请根据各业务接口变化，metaData1()和metaData2()方法同理。</text>
+        </view>
+    </view>
+    <view class="content tab-content" wx:if="{{tabName == 'ts5'}}">
+        <view class="stock">
+            <text>股票名称：{{stock}} - {{code}}</text>
+            <text>时间：{{time}}</text>
+            <text>昨收：{{yc}}</text>
+        </view>
+        <canvas canvas-id="time-sharing-5day" class="stage" style="width: 100%; height: 200px">
+        </canvas>
+        <canvas canvas-id="time-sharing-5day-b" class="stage" style="width: 100%; height: 80px">
+        </canvas>
+        <view class="btn-area">
+            <text class="p text">ts1 render time: {{ts1RenderTime}}ms</text>
+            <text class="p text">ts2 render time: {{ts2RenderTime}}ms</text>
+            <text class="p text">5日图相当于5天的分时图连接起来，所以其实还是分时图,只有时间轴上有区别。</text>
+        </view>
+    </view>
+</view>

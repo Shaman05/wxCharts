@@ -1,0 +1,80 @@
+page{
+    height: 100%;
+    overflow: auto;
+    background: #1C1F27;
+}
+.container {
+    font-size: 24rpx;
+    background: #1C1F27;
+    color: white;
+}
+.content{
+    padding-top: 50rpx;
+}
+.btn{
+    display: inline-block;
+    margin-right: 10rpx;
+    font-size: 24rpx;
+    height:50rpx;
+    line-height:50rpx;
+    padding:10rpx 20rpx;
+    background: #3184da;
+    color: white;
+    border-radius: 2px;
+}
+.btn-area{
+    padding: 40rpx 20rpx 0;
+}
+.btn-hover{
+    background: #3170c5;
+}
+.p{
+    display: block;
+    margin: 12rpx 0;
+}
+.code{
+    margin: 20rpx;
+    padding: 20rpx;
+    border: 1rpx solid black;
+    background: #232323;
+    font-size: 24rpx;
+}
+.code .text{
+    display: block;
+}
+.tab{
+    height: 80rpx;
+    border-bottom: 1px solid #0a0a0a;
+    display: flex;
+}
+.tab text,
+.tab picker{
+    display: inline-block;
+    height: 80rpx;
+    line-height: 80rpx;
+    font-size: 36rpx;
+    text-align: center;
+    border-bottom: 1px solid #0a0a0a;
+    flex: 1;
+    width: 0;
+}
+.tab text.current,
+.tab picker.current{
+    color: #3184da;
+    font-weight: bold;
+    border-bottom: 1px solid #3184da;
+}
+.dropDownIcon{
+    position: relative;
+    display: inline-block;
+    height: 0;
+    width: 0;
+    top: 0;
+    border-top: 4px solid #ffffff;
+    border-right: 5px solid transparent;
+    border-left: 5px solid transparent;
+    border-bottom: 4px solid transparent;
+}
+.tab picker.current .dropDownIcon{
+    border-top: 4px solid #3483e9;
+}

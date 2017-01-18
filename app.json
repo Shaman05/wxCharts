@@ -1,0 +1,45 @@
+{
+  "pages": [
+    "pages/index/index",
+    "pages/ts/ts",
+    "pages/kl/kl",
+    "pages/setting/setting"
+  ],
+  "window": {
+    "navigationBarBackgroundColor": "#262834",
+    "navigationBarTitleText": "wxChart-demo",
+    "navigationBarTextStyle": "white",
+    "backgroundColor": "#1C1F27"
+  },
+  "tabBar": {
+    "list": [
+      {
+        "pagePath": "pages/index/index",
+        "text": "Home",
+        "iconPath": "images/home0.png",
+        "selectedIconPath": "images/home.png"
+      },
+      {
+        "pagePath": "pages/ts/ts",
+        "text": "分时图",
+        "iconPath": "images/ts0.png",
+        "selectedIconPath": "images/ts.png"
+      },
+      {
+        "pagePath": "pages/kl/kl",
+        "text": "K线",
+        "iconPath": "images/kl0.png",
+        "selectedIconPath": "images/kl.png"
+      },
+      {
+        "pagePath": "pages/setting/setting",
+        "text": "设置",
+        "iconPath": "images/setting0.png",
+        "selectedIconPath": "images/setting.png"
+      }
+    ],
+    "color": "#c2c4d0",
+    "selectedColor": "#3483e9",
+    "backgroundColor": "#252934"
+  }
+}

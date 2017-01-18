@@ -1,0 +1,12 @@
+.btn-area{
+    padding: 40rpx 20rpx;
+}
+.btn-area navigator{
+    display: block;
+    background: white;
+    color: #1C1F27;
+    text-align: center;
+    margin-bottom: 20rpx;
+    padding: 10rpx 0;
+    border-radius: 4px;
+}

@@ -1,0 +1,13 @@
+#配置不需要提交的文件# Logs
+logs
+*.log
+npm-debug.log*
+
+# Dependency directories
+node_modules
+
+# Optional npm cache directory
+.npm
+
+.idea/
+.zip

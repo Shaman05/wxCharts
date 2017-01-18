@@ -1,0 +1,38 @@
+<view class="container">
+    <view class="tab">
+        <text class="{{tabName == 'dk' ? 'current': ''}}" data-type="dk" bindtap="tabChart">日K</text>
+        <text class="{{tabName == 'wk' ? 'current': ''}}" data-type="wk" bindtap="tabChart">周K</text>
+        <text class="{{tabName == 'mk' ? 'current': ''}}" data-type="mk" bindtap="tabChart">月K</text>
+        <picker mode="selector" value="{{minIndex}}" range="{{minArray}}"
+                class="{{tabName == 'mink' ? 'current': ''}}" data-type="mink" bindchange="tabMinChart">
+            <view class="picker">
+                {{minArray[minIndex]}}<view class="dropDownIcon"></view>
+            </view>
+        </picker>
+    </view>
+    <view class="content tab-content">
+        <view class="stock">
+            <text>股票：{{stock}} - {{code}}</text>
+            <text>时间：{{time}}</text>
+            <text>昨收：{{yc}}</text>
+        </view>
+        <view class="kline-average">
+            <text class="ma5">MA5:{{ma5}}</text>
+            <text class="ma10">MA10:{{ma10}}</text>
+            <text class="ma20">MA20:{{ma20}}</text>
+        </view>
+        <canvas canvas-id="k-line" class="stage" style="width: 100%; height: 160px;">
+        </canvas>
+        <view class="kline-average">
+            <text class="ma5">MA5:{{ma5b}}</text>
+            <text class="ma10">MA10:{{ma10b}}</text>
+            <text class="ma20">MA20:{{ma20b}}</text>
+        </view>
+        <canvas canvas-id="k-line-b" class="stage" style="width: 100%; height: 80px;">
+        </canvas>
+    </view>
+    <view class="btn-area">
+        <text class="p text">kl1 render time: {{kl1RenderTime}}ms</text>
+        <text class="p text">kl2 render time: {{kl2RenderTime}}ms</text>
+    </view>
+</view>

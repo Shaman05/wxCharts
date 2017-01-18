@@ -1,0 +1,7 @@
+.stock{
+    padding-bottom: 20rpx;
+    font-size: 24rpx;
+}
+.stock text{
+    display: block;
+}

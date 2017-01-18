@@ -1,0 +1,28 @@
+.kline-average{
+    height: 40rpx;
+    line-height: 40rpx;
+    padding-right: 10rpx;
+    text-align: right;
+}
+.kline-average text{
+    font-size: 24rpx;
+    margin-left: 40rpx;
+}
+.ma5 {
+    color: #6a6969;
+}
+
+.ma10 {
+    color: #f69a43;
+}
+
+.ma20 {
+    color: #edb2eb;
+}
+.stock{
+    padding-bottom: 20rpx;
+    font-size: 24rpx;
+}
+.stock text{
+    display: block;
+}
