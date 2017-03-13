@@ -15,9 +15,3 @@
 
 
 ## 效果展示
-
-![image](https://github.com/Shaman05/wxCharts/blob/master/images/tsd.png)
-![image](https://github.com/Shaman05/wxCharts/blob/master/images/tsdd.gif)
-![image](https://github.com/Shaman05/wxCharts/blob/master/images/ts5.png)
-![image](https://github.com/Shaman05/wxCharts/blob/master/images/dkl.png)
-![image](https://github.com/Shaman05/wxCharts/blob/master/images/minkl.png)
