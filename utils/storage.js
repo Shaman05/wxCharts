@@ -6,8 +6,8 @@
 module.exports = {
     getTsData: function () {
         return {
-            "name": "东方财富",
-            "code": "300059",
+            "name": "测试数据",
+            "code": "100000",
             "info": {
                 "c": "15.99",
                 "h": "16.30",
@@ -26,8 +26,8 @@ module.exports = {
     },
     getTs5Data: function () {
         return {
-            "name": "东方财富",
-            "code": "300059",
+            "name": "测试数据",
+            "code": "100000",
             "info": {
                 "c": "15.93",
                 "h": "16.30",
@@ -46,8 +46,8 @@ module.exports = {
     },
     getDkData: function () {
         return {
-            "name": "东方财富",
-            "code": "300059",
+            "name": "测试数据",
+            "code": "100000",
             "info": {
                 "c": "15.82",
                 "h": "15.84",
@@ -66,8 +66,8 @@ module.exports = {
     },
     getWkData: function () {
         return {
-            "name": "东方财富",
-            "code": "300059",
+            "name": "测试数据",
+            "code": "100000",
             "info": {
                 "c": "15.76",
                 "h": "15.84",
@@ -86,8 +86,8 @@ module.exports = {
     },
     getMkData: function () {
         return {
-            "name": "东方财富",
-            "code": "300059",
+            "name": "测试数据",
+            "code": "100000",
             "info": {
                 "c": "15.76",
                 "h": "15.84",
@@ -106,8 +106,8 @@ module.exports = {
     },
     getMin5Data: function () {
         return {
-            "name": "东方财富",
-            "code": "300059",
+            "name": "测试数据",
+            "code": "100000",
             "info": {
                 "c": "15.77",
                 "h": "15.90",
@@ -126,8 +126,8 @@ module.exports = {
     },
     getMin15Data: function () {
         return {
-            "name": "东方财富",
-            "code": "300059",
+            "name": "测试数据",
+            "code": "100000",
             "info": {
                 "c": "15.77",
                 "h": "15.90",
@@ -146,8 +146,8 @@ module.exports = {
     },
     getMin30Data: function () {
         return {
-            "name": "东方财富",
-            "code": "300059",
+            "name": "测试数据",
+            "code": "100000",
             "info": {
                 "c": "15.76",
                 "h": "15.90",
@@ -166,8 +166,8 @@ module.exports = {
     },
     getMin60Data: function () {
         return {
-            "name": "东方财富",
-            "code": "300059",
+            "name": "测试数据",
+            "code": "100000",
             "info": {
                 "c": "15.76",
                 "h": "15.90",

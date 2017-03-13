@@ -88,7 +88,7 @@ module.exports = function () {
             var startY = this.paddingTop;
             var endY = h - this.paddingBottom;
             var step = (h - this.paddingTop - this.paddingBottom) / row;
-            var showLabel = yOpt[0].showLabel;
+            var showLabel = yOpt[0].showLabel || true;
             var max = this.yMax;
             var min = this.yMin;
 
