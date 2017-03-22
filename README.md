@@ -15,3 +15,8 @@
 
 
 ## 效果展示
+
+![image](https://github.com/Shaman05/wxCharts/blob/master/images/fs.png)
+![image](https://github.com/Shaman05/wxCharts/blob/master/images/wr.png)
+![image](https://github.com/Shaman05/wxCharts/blob/master/images/kll.png)
+![image](https://github.com/Shaman05/wxCharts/blob/master/images/fsd.gif)
