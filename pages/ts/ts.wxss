@@ -5,3 +5,11 @@
 .stock text{
     display: block;
 }
+.canvas-wrap{
+    position: relative;
+}
+.canvas-wrap .axis-stage{
+    position: absolute;
+    top: 0;
+    left: 0;
+}

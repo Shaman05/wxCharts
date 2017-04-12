@@ -9,10 +9,14 @@
             <text>时间：{{time}}</text>
             <text>昨收：{{yc}}</text>
         </view>
-        <canvas canvas-id="time-sharing" class="stage" style="width: 100%; height: 200px">
-        </canvas>
-        <canvas canvas-id="time-sharing-b" class="stage" style="width: 100%; height: 80px">
-        </canvas>
+        <view class="canvas-wrap">
+            <canvas canvas-id="time-sharing" class="stage" style="width: 100%; height: 200px">
+            </canvas>
+            <canvas canvas-id="time-sharing-b" class="stage" style="width: 100%; height: 80px">
+            </canvas>
+            <canvas canvas-id="time-sharing-axis" class="stage axis-stage" style="width: 100%; height: 280px" bindlongtap="axisStart" bindtouchmove="axisMove" bindtouchend="axisStop">
+            </canvas>
+        </view>
         <view class="btn-area">
             <text class="btn" hover-class="btn-hover" bindtap="reset">重置</text>
             <text class="btn" hover-class="btn-hover" bindtap="dynamic">模拟动态变化</text>

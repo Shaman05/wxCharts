@@ -5,8 +5,10 @@
 var app = getApp();
 var storage = require('../../utils/storage');
 var ts = require('../../utils/wxChart/time-sharing');
+var axisShow = require('../../utils/wxChart/axis-show');
 var ts1, ts2;     //分时
 var tsd51, tsd52; //五日
+var tsAxisShow;   //分时手势坐标
 var getOptionTimeSharing1 = function (type, width) {
     return {
         name: type || 'time-sharing',
@@ -87,6 +89,11 @@ var getOptionTimeSharing2 = function (type, width) {
         }
     };
 };
+var getOptionTimeSharingAxis = function () {
+    return {
+
+    };
+};
 var timer = null;
 
 Page({
@@ -142,6 +149,15 @@ Page({
         this.renderTs1(data);
         ts2 = ts('time-sharing-b').init(getOptionTimeSharing2());
         this.renderTs2(data);
+        tsAxisShow = axisShow('time-sharing-axis', {
+            //todo: 配置项
+            type: 'ts',
+            height: 280,
+            width: 'auto',
+            maxY: 100,
+            minY: 0
+        });
+        tsAxisShow.init();
     },
     'init-ts5': function () {
         var data = this.data.ts5;
@@ -200,5 +216,18 @@ Page({
             timerIndex: index === '' ? 4 : index
         });
         this.dynamic();
+    },
+    axisStart: function (e) {
+        var x = e.touches[0].x;
+        var y = e.touches[0].y;
+        tsAxisShow.start(x, y);
+    },
+    axisMove: function (e) {
+        var x = e.touches[0].x;
+        var y = e.touches[0].y;
+        tsAxisShow.move(x, y);
+    },
+    axisStop: function () {
+        tsAxisShow.stop();
     }
 });
