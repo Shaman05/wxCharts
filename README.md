@@ -20,3 +20,7 @@
 ![image](https://github.com/Shaman05/wxCharts/blob/master/images/wr.png)
 ![image](https://github.com/Shaman05/wxCharts/blob/master/images/kll.png)
 ![image](https://github.com/Shaman05/wxCharts/blob/master/images/fsd.gif)
+
+## 手势坐标(演示效果)
+
+![image](https://github.com/Shaman05/wxCharts/blob/master/images/axis-show.gif)
