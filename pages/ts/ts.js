@@ -109,7 +109,8 @@ Page({
         ts1RenderTime: 0,
         ts2RenderTime: 0,
         timerIndex: 4,
-        timerArray: ['50ms', '100ms', '200ms', '500ms', '1000ms']
+        timerArray: ['50ms', '100ms', '200ms', '500ms', '1000ms'],
+        isShowAxis: false
     },
     onLoad: function () {
         var tsData = storage.getTsData();
@@ -220,14 +221,18 @@ Page({
     axisStart: function (e) {
         var x = e.touches[0].x;
         var y = e.touches[0].y;
+        this.data.isShowAxis = true;
         tsAxisShow.start(x, y);
     },
     axisMove: function (e) {
-        var x = e.touches[0].x;
-        var y = e.touches[0].y;
-        tsAxisShow.move(x, y);
+        if(this.data.isShowAxis){
+            var x = e.touches[0].x;
+            var y = e.touches[0].y;
+            tsAxisShow.move(x, y);
+        }
     },
     axisStop: function () {
+        this.data.isShowAxis = false;
         tsAxisShow.stop();
     }
 });
