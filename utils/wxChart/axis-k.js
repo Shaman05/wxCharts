@@ -2,6 +2,8 @@
  * Created by ChenChao on 2017/1/3.
  */
 
+var common = require('./common');
+
 module.exports = function () {
     return {
         col: 5,
@@ -108,7 +110,7 @@ module.exports = function () {
             
             function drawYUnit() {
                 ctx.setFillStyle(this.txtColor);
-                showLabel && ctx.fillText(max.toFixed(2), startX + 3, startY + 12);
+                showLabel && ctx.fillText(common.metaUnit(max), startX + 3, startY + 12);
                 for(var i = 1; i < row; i++){
                     var y = startY + step * i;
                     if(showLabel){

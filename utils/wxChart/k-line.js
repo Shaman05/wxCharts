@@ -357,10 +357,10 @@ module.exports = function (canvasId) {
             if(option.complete){
                 option.complete(+new Date() - startTime);
             }
-            if(option.showMax){
-                ctx.setFillStyle(this.txtColor);
-                ctx.fillText(common.metaUnit(max), this.paddingLeft + 2, this.paddingTop + 12);
-            }
+            // if(option.showMax){
+            //     ctx.setFillStyle(this.txtColor);
+            //     ctx.fillText(common.metaUnit(max), this.paddingLeft + 3, this.paddingTop + 30);
+            // }
         },
         candle: function (option) {
             var that = this;
